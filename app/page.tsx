@@ -13,12 +13,25 @@ export default function Home() {
 
   const [isNewYear, setNewYear] = useState(false);
 
-  const snowflake1 = document.createElement('img')
-  snowflake1.src = 'sflake.png';
-  const snowflake2 = document.createElement('img')
-  snowflake2.src = 'sflake.png';
+  const Snowflake1 = () => (
+    <Image
+      src="/sflake.png"
+      alt="Snowflake 1"
+      width={50}
+      height={50}
+    />
+  );
+  
+  const Snowflake2 = () => (
+    <Image
+      src="/sflake.png"
+      alt="Snowflake 2"
+      width={50}
+      height={50}
+    />
+  );
 
-  const images = [snowflake1, snowflake2]
+  const images = [Snowflake1, Snowflake2]
 
   const newYear = () => {
     setTopVal('top-0');

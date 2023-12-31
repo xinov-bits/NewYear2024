@@ -4,8 +4,10 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 
 import Snowfall from 'react-snowfall';
-import ReactPlayer from 'react-player';
 import Image from "next/image";
+
+import dynamic from 'next/dynamic'
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 export default function Home() {
   const [topVal, setTopVal] = useState('top-32');
@@ -68,11 +70,6 @@ export default function Home() {
         </div>
 
         <ReactPlayer url={'s1.mp3'} playing={true} />
-        <ReactPlayer url={'s2.mp3'} playing={isNewYear} />
-        <ReactPlayer url={'s3.mp3'} playing={true} />
-        <ReactPlayer url={'s4.mp3'} playing={true} />
-        <ReactPlayer url={'s5.mp3'} playing={true} />
-        <ReactPlayer url={'s6.mp3'} playing={true} />
       </main>
     </>
   )

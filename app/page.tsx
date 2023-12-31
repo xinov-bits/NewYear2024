@@ -38,9 +38,9 @@ export default function Home() {
     <>
       <Snowfall />
 
-      <main className="flex w-full min-h-screen flex-col items-center justify-between p-20">
+      <main className="flex w-[80%] h-full flex-col items-center justify-between p-0 lg:p-20">
         <div className="flex justify-center items-center w-full h-full">
-          <div className="flex justify-between items-center w-[22rem] h-32 overflow-y-hidden text-[10rem] font-black text-yellow-200  text">
+          <div className="flex justify-between items-center w-[12rem] lg:w-[22rem] h-32 overflow-y-hidden text-[5.5rem] lg:text-[10rem] font-black text-yellow-200  text">
             <div className="flex justify-start items-center w-full">
               20
             </div>
@@ -57,15 +57,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center w-full mt-4 text-center text-white font-bold text-xl">
+        <div className="flex justify-center items-center w-full mt-4 text-center text-white font-bold text-lg lg:text-xl">
           Tanxin & Nixnat wishes you a <br /> HAPPY NEW YEAR
         </div>
 
-        <div className="flex justify-center items-center w-full mt-4 text-center text-white font-bold text-xl">
+        <div className="flex justify-center items-center w-full mt-4 text-center text-white font-bold text-lg lg:text-xl">
           featuring 9th A & 3TAV
         </div>
 
-        <div className="flex justify-center items-center w-full mt-4 text-center text-white font-bold text-xl">
+        <div className="flex justify-center items-center w-full mt-4 text-center text-white font-bold text-lg lg:text-xl">
           <Image className="flex justify-center items-center w-80 h-80"
             width={100}
             height={100}

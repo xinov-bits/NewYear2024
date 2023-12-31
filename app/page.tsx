@@ -13,33 +13,6 @@ export default function Home() {
 
   const [isNewYear, setNewYear] = useState(false);
 
-  const [sf1, setsf1] = useState()
-  const [sf2, setsf2] = useState()
-
-  useEffect(() => {
-    // Create the first snowflake element
-    const snowflake1 = document.createElement('img');
-    snowflake1.src = 'sflake.png';
-
-    // Create the second snowflake element
-    const snowflake2 = document.createElement('img');
-    snowflake2.src = 'sflake.png';
-
-    // Append the elements to the body of the document
-    document.body.appendChild(snowflake1);
-    document.body.appendChild(snowflake2);
-
-    setsf1(snowflake1)
-    setsf2(snowflake2)
-
-    // Cleanup: remove the elements when the component unmounts
-    return () => {
-      document.body.removeChild(snowflake1);
-      document.body.removeChild(snowflake2);
-    };
-  }, []);
-
-  const images = [sf1, sf2]
 
   const newYear = () => {
     setTopVal('top-0');
@@ -63,11 +36,6 @@ export default function Home() {
 
   return (
     <>
-      <Snowfall
-        images={images}
-        radius={[16, 28]}
-        snowflakeCount={50}
-      />
       <Snowfall />
 
       <main className="flex w-full min-h-screen flex-col items-center justify-between p-20">

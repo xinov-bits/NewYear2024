@@ -16,6 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="shortcut icon" href="/favicon.jpg" />
+      </head>
+
       <body className={lora.className}>{children}</body>
     </html>
   )

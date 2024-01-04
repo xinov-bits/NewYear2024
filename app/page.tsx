@@ -34,7 +34,7 @@ export default function Home() {
       <main className="flex w-full h-full flex-col items-center justify-between p-0 lg:p-20 overflow-hidden">
         <div className="block justify-center items-center w-[80%] lg:w-full h-full">
           <div className="flex justify-center items-center w-full h-full">
-            <div className="flex justify-between items-center w-[12rem] lg:w-[22rem] h-32 overflow-y-hidden text-[5.5rem] lg:text-[10rem] font-black text-yellow-200  text">
+            <div className="flex justify-between items-center w-[12rem] lg:w-[22rem] h-32 overflow-y-hidden text-[5.5rem] lg:text-[10rem] font-black text-[hotpink]  text">
               <div className="flex justify-start items-center w-full">
                 20
               </div>

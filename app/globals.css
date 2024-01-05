@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -9,15 +10,46 @@
   --background-color: #01101f;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
 
 body {
   color: rgb(var(--foreground-rgb));
   background: var(--background-color);
+  overflow: hidden;
+}
+
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+
+  /* font-family: 'BlockyFont', sans-serif; */
+  font-size: 2rem;
+  text-align: center;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: hotpink; /* Change color as per your preference */
+  font-size: 10rem;
+}
+
+.happyBirthday {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  color: dodgerblue;
+  letter-spacing: 10px;
 }
